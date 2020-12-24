@@ -8,19 +8,21 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/check_permission"
+        android:id="@+id/checkPermissionButton"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/checkWifiButton"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/check_wifi_network"
         android:id="@+id/checkWifiButton"
         android:layout_centerHorizontal="true"
-        android:layout_above="@id/divider"
-        />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:id="@+id/divider"
+        android:layout_centerVertical="true"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_centerVertical="true"
         />
 
     <Button
@@ -29,7 +31,7 @@
         android:text="@string/scan_wifi_network"
         android:id="@+id/scanWifiButton"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/divider"
+        android:layout_below="@id/checkWifiButton"
         />
 
 </RelativeLayout>
