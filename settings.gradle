@@ -1,0 +1,3 @@
+include ':wifimanager-ktx'
+include ':app'
+rootProject.name = "wifi-example"

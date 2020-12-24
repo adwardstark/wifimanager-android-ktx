@@ -1,0 +1,49 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+
+    ext {
+
+        // Plugins
+        gradle_version = "4.0.1"
+        kotlin_version = "1.3.72"
+        maven_version = "2.1"
+
+        // SDKs
+        build_version = 29
+        backward_version = 16
+
+        // Standard Libraries
+        corektx_version = "1.3.2"
+        appcompat_version = "1.2.0"
+        kotlinx_coroutines = "1.3.9"
+
+        // WifiManagerKTX
+        lib_version = "1.0"
+        lib_version_code = 1
+    }
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.github.dcendents:android-maven-gradle-plugin:$maven_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
