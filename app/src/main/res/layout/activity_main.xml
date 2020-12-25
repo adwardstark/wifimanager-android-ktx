@@ -3,10 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="50dp"
+    android:paddingEnd="50dp"
     tools:context=".MainActivity">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/check_permission"
         android:id="@+id/checkPermissionButton"
@@ -15,7 +17,7 @@
         />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/check_wifi_network"
         android:id="@+id/checkWifiButton"
@@ -26,7 +28,7 @@
         />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/scan_wifi_network"
         android:id="@+id/scanWifiButton"
