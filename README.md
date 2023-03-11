@@ -2,15 +2,14 @@ WifiManager-Android-KTX
 =======================
 [![Release](https://jitpack.io/v/adwardstark/wifimanager-android-ktx.svg)](https://jitpack.io/#adwardstark/wifimanager-android-ktx)
 
-This light-weight library provides extension functions to existing Wifi-Manager API available on android to reduce boilerplate-code and simply some commonly used APIs. It also uses kotlin-coroutines to remove dependency on callbacks and broadcast-receivers.
+To cut down on boilerplate code and streamline several frequently used APIs, this lightweight library offers extension functions to the Android Wifi-Manager API that is currently accessible. Moreover, it employs Kotlin-coroutines to eliminate reliance on callbacks and broadcast receivers.
 
 ## Compatibility
 ----------------
 WifiManager-Android-KTX requires Android [Jellybean](https://developer.android.com/about/versions/jelly-bean) (API level 16) or higher.
 
-## How to
+## Installation
 ---------
-To add this library in your project follow these steps:
  * **Step 1.** Add the JitPack repository to your root `build.gradle` file.
     ```gradle
     allprojects {
@@ -28,8 +27,8 @@ To add this library in your project follow these steps:
     }
     ```
 
-## List of Extension Functions
-------------------------------
+## Available Extension Functions
+-----------------------------------
 
 These are the extensions that are available within this library:
 
@@ -47,5 +46,5 @@ These are the extensions that are available within this library:
  * **getWifiScanResults()** : Returns list of wifi-networks if available, uses [ `suspendCancellableCoroutine{}` ].
 
 ## License
-----------
+-------------
 Apache 2.0. See the [LICENSE](https://github.com/adwardstark/wifimanager-android-ktx/blob/master/LICENSE) file for details.
